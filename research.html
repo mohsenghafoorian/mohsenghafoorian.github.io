@@ -1,0 +1,126 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Mohsen Ghafoorian</title>
+  <meta name="description" content="Mohsen Ghafoorian, Homepage" />
+  <meta name="keywords" content="mohsen ghafoorian, radboud, deep learning, machine learning ,reinforcement learning" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7159236-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="index.html">Home</a></li>
+          <li class="current"><a href="research.html">Research</a></li>
+          <li ><a href="publications.html">Publications</a></li>
+          <li ><a href="cv.html">CV</a></li>
+          <li ><a href="presentations.html">Talks</a></li>
+          <li ><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+<div id="site_content">
+<div id="content">
+
+<h1>Selected Research Projects:</h1>
+<p>
+
+
+<h2>Location-Sensitive Convolutional Neural Networks for WMH Segmentation in Brain MR Images</h2>
+<img src="images/brain.jpg" alt="" title="" style="float: right; margin-left: 0px; margin-top: 0px; margin-right: 30px; padding:1px; border: 0px solid #EEE; height: 150px;">
+(Sept. 2015)<br>
+The anatomical location of imaging features is of crucial importance for accurate diagnosis in many medical
+tasks. Convolutional neural networks (CNN) have had huge successes in computer vision, but they lack the natural ability
+to incorporate the anatomical location in their decision making process, hindering success in some medical image analysis tasks.<br>
+In this project, we have addressed this problem, by augmenting explicit location features into the networks, while the weights 
+are being learned during the training. We have benchmarked such a strategy applying to the task of white matter hyperintensity
+segmentation in brain MR images of a large dataset and compared the proposed architecture with for various multi-scale architectures that 
+also aim to capture more contextual information. 
+As a result, we observed that the CNNs that incorporate location information substantially outperform a conventional segmentation method with 
+hand-crafted features as well as CNNs that do not integrate location information. <br>
+<strong>I was personally pretty excited that on a test set of 46 scans, the best configuration of our networks (a hybrid system that utilized  
+explicit spatial features as well as multi-scale patches) obtained a Dice score of 0.791, 
+compared to 0.797 for an independent expert human observer while no statistically significant advantage of the independent human expert 
+was observed (p-value=0.17). </strong>
+<br>A preprint of the corresponding manuscript on ArXiv &#8226; <a href="files/arxiv_wmh_cnn.pdf">PDF</a><br> 
+
+<br><br><br>
+
+<h2>Non-uniform patch sampling for Convolutional Neural Networks Applied to WMH Segmentation in Brain MR Images</h2>
+<img src="images/focus.jpg" alt="" title="" style="float: right; margin-left: 0px; margin-top: 0px; margin-right: 30px; padding:1px; border: 0px solid #EEE; height: 180px;">
+(Oct. 2015)<br>
+Convolutional neural networks (CNN) have been reported to be the state of the art in most of visual recognition tasks and in particular in image classification
+and object detection. A popular way to extend image classifying CNNs for a segmentation problem is to train them
+to predict the label for each voxel given a small patch representing a local neighborhood of that voxel. Nonetheless
+the chosen patch size might impose natural limitations hindering success of such segmentation systems in many medical
+image analysis applications, where the anatomical location of the imaging features is of crucial importance; small patches
+lack enough contextual information, while larger patch sizes, apart from higher computational costs, decrease the localization accuracy. <br>
+
+
+<strong>
+A way to address this problem is to break the unnecessary assumption of uniform patch sampling. The human visual
+system also non-uniformly perceives the world, with a lot of details at the focal point but a compact contextual representation
+from large areas in the surroundings. Inspired by the way our natural visual system performs, in this project we took non-uniformly
+sampled patches to train deep CNNs and we applied such a system for segmentation of WMHs, where a comprehensive inclusion
+of contextual information matters for a decent segmentation. We showed that using this sampling approach, a CNN outperforms
+similar single-scale and even more complex multi-scale networks that use uniform sampling.
+</strong>
+<br>The corresponding manuscript published in IEEE ISBI provides more details on this work. &#8226; <a href="files/NonUniformCNN_ISBI2016.pdf">PDF</a><br> 
+<br><br><br>
+
+<h2>Automated Temporal Abstraction in Reinforcement Learning using Ant System Algorithm</h2>
+<img src="images/RL.png" alt="" title="" style="float: right; margin-left: 0px; margin-top: 0px; margin-right: 30px; padding:1px; border: 0px solid #EEE; height: 200px;">
+Nowadays developing autonomous systems, that can act in various environments and interactively perform
+their assigned tasks, are intensively desirable. Reinforcement learning is an attractive area of machine
+learning that addresses these concerns. In large scales, learning performance of an agent can be improved
+by using hierarchical Reinforcement Learning techniques and temporary extended actions. In this study, we proposed a new method 
+for subgoal states discovery and construction of useful skills. In particular we executed a few iterations of Ant System optimization 
+and separated the bottleneck transitions using their specific property that their pheromone concentrations change more smoothly compared to the other 
+transitions. Experimental Results show that the proposed method can significantly improve the learning performance of the agent in several 
+simulated environments including the Taxi and the Playroom environments.
+<br>To see more details on the study, see our published work at AAAI symposium 2013. &#8226; <a href="files/AAAI_RL_paper.pdf">PDF</a><br> 
+<br><br><br>
+
+
+
+</p>
+
+</div>
+</div>
+
+    <div id="footer">
+|<a href="index.html" target="_blank">Mohsen Ghafoorian</a> | 
+<a href="https://www.facebook.com/mohsen.ghafoorian" target="_blank">Facebook</a> | 
+<a href="http://www.linkedin.com/pub/mohsen-ghafoorian/53/437/ba3" target="_blank">LinkedIn</a> | 
+<a href="https://twitter.com/mohsen_gh87" target="_blank">Twitter</a> | 
+<a href="https://scholar.google.nl/citations?user=989WL-wAAAAJ&hl=en" target="_blank">Google Scholar</a> | 
+<a href="https://www.researchgate.net/profile/Mohsen_Ghafoorian5" target="_blank">Research Gate</a> |
+<a href="https://soundcloud.com/mohsenghafoorian" target="_blank">Sound Cloud |
+    </div>
+  </div>
+</body>
+</html>
+
