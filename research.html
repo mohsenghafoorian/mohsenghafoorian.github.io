@@ -85,7 +85,7 @@
   .authors{color:var(--muted); font-size:.92rem; margin:9px 0 13px}
   .authors strong u{color:var(--text); font-weight:600; text-decoration:underline; text-underline-offset:2px}
   .pub-links{display:flex; flex-wrap:wrap; gap:8px}
-  .pl{font-size:.82rem; font-weight:600; padding:6px 12px; border-radius:9px; border:1px solid var(--line); background:var(--bg-soft); transition:.2s; display:inline-flex; align-items:center; gap:6px; cursor:pointer}
+  .pl{font-size:.82rem; font-weight:600; padding:6px 12px; border-radius:9px; border:1px solid var(--line); background:var(--bg-soft); color:var(--text); transition:.2s; display:inline-flex; align-items:center; gap:6px; cursor:pointer}
   .pl:hover{border-color:var(--brand); color:var(--brand)}
   .pl.copy{font-family:inherit}
   .bibtex{display:none}
@@ -147,6 +147,30 @@
 <main class="wrap pubs" id="publist">
 
   <div class="yearsep">2026</div>
+
+  <!-- SQuad -->
+  <article class="pub" data-cat="video" id="pub-squad">
+    <figure class="teaser"><img src="https://qualcomm-ai-research.github.io/squad/files/method_stuff/method_figure_part_1.png" alt="SQuad teaser" onerror="this.remove();this.parentNode.insertAdjacentHTML('beforeend','<div class=&quot;ph&quot;>SQuad</div>')"></figure>
+    <div class="pub-body">
+      <div class="pub-top">
+        <h3><a href="https://arxiv.org/abs/2608.16585" target="_blank" rel="noopener">SQuad: Sub-Quadratic Attention Distillation for Efficient Video Generation</a></h3>
+        <div class="badges"><span class="venue">arXiv</span></div>
+      </div>
+      <div class="authors"><strong><u>A. Karnewar</u></strong>, D. Korzhenkov, <strong><u>A. Habibian</u></strong>, <strong><u>M. Ghafoorian</u></strong></div>
+      <div class="pub-links">
+        <a class="pl" href="https://arxiv.org/abs/2608.16585" target="_blank">📄 Paper</a>
+        <a class="pl" href="https://qualcomm-ai-research.github.io/squad/" target="_blank">🌐 Project Page</a>
+        <button class="pl copy" onclick="copyBib('bib-squad',this)">{ } Copy BibTeX</button>
+      </div>
+      <pre class="bibtex" id="bib-squad">@article{Karnewar2026SQuad,
+  title={SQuad: Sub-Quadratic Attention Distillation for Efficient Video Generation},
+  author={Animesh Karnewar and Denis Korzhenkov and Amirhossein Habibian and Mohsen Ghafoorian},
+  journal={arXiv preprint arXiv:2608.16585},
+  year={2026},
+  url={https://arxiv.org/abs/2608.16585}
+}</pre>
+    </div>
+  </article>
 
   <!-- MobileWan -->
   <article class="pub" data-cat="video" id="pub-mobilewan">
